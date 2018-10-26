@@ -1,0 +1,37 @@
+[
+  {
+    "partName": "Flanges",
+    "description": "",
+    "image": "components/products/accessories/product_images/Flanges.png"
+  },
+  {
+    "partName": "Gaskets",
+    "description": "",
+    "image": "components/products/accessories/product_images/Gaskets.png"
+  },
+  {
+    "partName": "Flex Tubing",
+    "description": "",
+    "image": "components/products/accessories/product_images/Flex_tubing.png"
+  },
+  {
+    "partName": "Flex Flange",
+    "description": "",
+    "image": "components/products/accessories/product_images/flex_flange.jpg"
+  },
+  {
+    "partName": "Flange Header",
+    "description": "",
+    "image": "components/products/accessories/product_images/flange_header.jpg"
+  },
+  {
+    "partName": "Exhaust Flex Spring Joint",
+    "description": "",
+    "image": "components/products/accessories/product_images/exhaust_flex_spring_joint.jpg"
+  },
+  {
+    "partName": "Welding Wires",
+    "description": "",
+    "image": "components/products/accessories/product_images/welding_wire.jpg"
+  }
+]

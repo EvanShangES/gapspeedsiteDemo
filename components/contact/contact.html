@@ -1,0 +1,119 @@
+<main class="page-content">
+    <!--           ¬ section intro           /-->
+    <section style="background-image: url(resources/images/pattern.jpg)" class="intro-page parallax-repeat dark">
+        <div class="container">
+            <div class="intro-page__content-wrapper" style="margin-bottom: 60px">
+                <h1>Contact Us</h1>
+                <div class="btn-wrapper center-block" style="margin-top: 20px">
+                    <a ng-click="changeOffice(tianjin)" role="button" class="btn btn-regular btn-accent"><span class="btn-text">Tianjin Office</span><span class="btn-over"></span></a>
+                    <a ng-click="changeOffice(toronto)" role="button" class="btn btn-regular btn-accent"><span class="btn-text">Toronto Office</span><span class="btn-over"></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--           end section intro           /-->
+
+    <!--           ¬ page-content-wrapper           /-->
+    <div class="page-content-wrapper" style="margin-top: 0">
+        <div class="container" style="margin-bottom: 0">
+            <div class="row">
+                <!--           ¬ inner-content           /-->
+                <div class="col-md-12">
+                    <!--           ¬ section content           /-->
+                    <section class="section-content">
+                        <header class="section-header">
+                            <h2>{{currentOffice.name}} Office</h2>
+                            <div class="divider"></div>
+                            <p>Contact us if you have any inquiries about quotes or questions about our products, a team member will reply to you in a short while! Our hours of operation are listed below. Hope to hear from you!</p>
+                        </header>
+                        <!--           ¬ contacts-list           /-->
+                        <div class="contacts-list row">
+                            <div class="contacts-list__item col-sm-6 col-lg-3"><i class="icon pe-7s-map-2"></i>
+                                <ul>
+                                    <li>{{currentOffice.address.address}}</li>
+                                    <li>{{currentOffice.address.country}}</li>
+                                </ul>
+                            </div>
+                            <div class="contacts-list__item col-sm-6 col-lg-3"><i class="icon pe-7s-phone"></i>
+                                <ul>
+                                    <li><a>{{currentOffice.phoneNumbers.phone}}</a></li>
+                                    <li><a>{{currentOffice.phoneNumbers.fax}}</a></li>
+                                </ul>
+                            </div>
+                            <div class="contacts-list__item col-sm-6 col-lg-3"><i class="icon pe-7s-mail-open"></i>
+                                <ul>
+                                    <li><a>{{currentOffice.email}}</a></li>
+                                </ul>
+                            </div>
+                            <div class="contacts-list__item col-sm-12 col-lg-3"><i class="icon pe-7s-clock"></i>
+                                <ul>
+                                    <li>{{currentOffice.officeHours.weekdays}}</li>
+                                    <li>{{currentOffice.officeHours.weekends}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--           end contacts-list           /-->
+                        <!--           ¬ map           /-->
+                    </section>
+                    <!--           end section content           /-->
+                </div>
+                <!--           end inner-content           /-->
+                <!--           ¬ sidebar           /-->
+            </div>
+        </div>
+        <div class="container" style="margin-left: 200px; margin-right: 200px; width: 80%">
+            <div class="section-content tuning-contacts-content row" style="height: 700px; margin-bottom: 0; margin-top: 30px">
+                <!--           ¬ contacts panel           /-->
+                <!--           end contacts panel           /-->
+                <div class="col-xs-12 col-md-6 col-lg-6">
+                    <div id="map" style="width: 100%"></div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-6">
+                    <article class="panel tuning-contacts-panel">
+                        <div class="panel__inner">
+                            <div class="section-header" style="margin-top: 10px">
+                                <h2>Send us a message</h2>
+                                <div class="divider"></div>
+                                <p>We will reply you in 48 hours (on business days).</p>
+                            </div>
+                            <div class="panel__body">
+                                <!--           ¬ reservation form           /-->
+                                <div class="reservation-form">
+                                    <form id="contactsForm" action="mailto:ava@gaexhaust.com" method="POST" data-toggle="validator">
+                                        <div class="form-inner row">
+                                            <div class="col-sm-6 form-group">
+                                                <label for="contName" class="label-control">Your name</label>
+                                                <div class="input-wrap input-wrap--icon-left"><i class="input-icon pe-7s-user"></i>
+                                                    <input id="contName" type="text" name="user_name" placeholder="Name" required class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 form-group">
+                                                <label for="contEmail" class="label-control">Your e-mail</label>
+                                                <div class="input-wrap input-wrap--icon-left"><i class="input-icon pe-7s-mail"></i>
+                                                    <input id="contEmail" type="email" name="user_email" placeholder="Email" required class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 form-group">
+                                                <label for="contMsg" class="label-control">Your message</label>
+                                                <textarea id="contMsg" name="user_message" required class="form-control"></textarea>
+                                            </div>
+
+                                            <div class="col-xs-12">
+                                                <button type="submit" class="btn btn-regular btn-accent"><span class="btn-text">Contact us</span><span class="btn-over"></span></button>
+                                            </div>
+                                        </div>
+                                    </form>                            </div>
+                                <!--           end reservation form           /-->
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!--           ¬ maintenance           /-->
+    </div>
+    <!--           end page-content-wrapper           /-->
+
+</main>
